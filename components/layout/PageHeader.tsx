@@ -26,3 +26,6 @@ export default function PageHeader({ title, subtitle, badge, actions, className 
     </div>
   );
 }
+
+export { PageHeader };
+
