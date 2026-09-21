@@ -61,7 +61,7 @@ const GOVERNANCE_NAV = [
   { label: "Governance", href: "/governance", icon: ShieldCheck },
 ];
 
-export default function AppSidebar() {
+export function AppSidebar() {
   const pathname = usePathname();
 
   const isItemActive = (href: string) => {
@@ -289,3 +289,6 @@ export default function AppSidebar() {
     </Sidebar>
   );
 }
+
+export default AppSidebar;
+

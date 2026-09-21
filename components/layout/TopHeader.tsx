@@ -38,7 +38,7 @@ const ROUTE_TITLES: Record<string, string> = {
   "/governance": "Governance",
 };
 
-export default function TopHeader() {
+export function TopHeader() {
   const pathname = usePathname();
   const resetSensitivity = useCaseStore((state) => state.resetSensitivity);
 
@@ -122,3 +122,6 @@ export default function TopHeader() {
     </header>
   );
 }
+
+export default TopHeader;
+
